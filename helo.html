@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Hoàng Thành Đạt</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background: #101827;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172337;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            min-height: 450px;
+        }
+
+        .home h1 {
+            font-size: 35px;
+        }
+
+        .home span {
+            color: #38bdf8;
+        }
+
+        .home img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background: #172337;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box p {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background: #38bdf8;
+        }
+
+        footer {
+            background: #080f1c;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header, .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home img {
+                width: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>HTĐ.</h2>
+
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- TRANG CHỦ -->
+        <section class="home" id="home">
+
+            <div>
+                <p>SINH VIÊN CÔNG NGHỆ THÔNG TIN</p>
+
+                <h1>Xin chào!<br>
+                    Tôi là <span>Hoàng Thành Đạt</span>
+                </h1>
+
+                <p>Chào mừng bạn đến với website cá nhân của tôi.</p>
+
+                <a href="#about" class="button">Tìm hiểu thêm</a>
+            </div>
+
+            <img src="dat.jpg" alt="Ảnh đại diện">
+        </section>
+
+        <!-- GIỚI THIỆU -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+
+            <div class="box">
+                <p>Tôi tên là Hoàng Thành Đạt, hiện đang là sinh viên ngành Công nghệ thông tin tại Trường Đại học Vinh.</p>
+
+                <p>Tôi yêu thích công nghệ, lập trình và thiết kế website.</p>
+
+                <p><b>Họ tên:</b> Hoàng Thành Đạt</p>
+                <p><b>Năm sinh:</b> 2007</p>
+                <p><b>Trường:</b> Đại học Vinh</p>
+                <p><b>Lớp:</b> 66K1-CNTT</p>
+                <p><b>Sở thích:</b> Công nghệ, lập trình</p>
+            </div>
+        </section>
+
+        <!-- KỸ NĂNG -->
+        <section id="skills">
+            <h2>Kỹ năng của tôi</h2>
+
+            <div class="box">
+                <p>HTML - Cơ bản</p>
+                <p>CSS - Cơ bản</p>
+                <p>Làm việc nhóm</p>
+                <p>Giao tiếp</p>
+            </div>
+        </section>
+
+        <!-- DỰ ÁN -->
+        <section id="projects">
+            <h2>Các dự án học tập</h2>
+
+            <div class="box">
+                <h3>Website Portfolio cá nhân</h3>
+                <p>Sử dụng HTML và CSS để tạo website giới thiệu bản thân.</p>
+            </div>
+
+            <div class="box">
+                <h3>Thực hành thiết kế Website</h3>
+                <p>Tìm hiểu cách tạo bố cục, màu sắc và giao diện website.</p>
+            </div>
+        </section>
+
+        <!-- MỤC TIÊU -->
+        <section id="future">
+            <h2>Định hướng tương lai</h2>
+
+            <div class="box">
+                <p>Tôi mong muốn học tốt kiến thức chuyên ngành, nâng cao kỹ năng lập trình và trở thành một lập trình viên trong tương lai.</p>
+            </div>
+        </section>
+
+        <!-- LIÊN HỆ -->
+        <section id="contact">
+            <h2>Thông tin liên hệ</h2>
+
+            <div class="box">
+                <p><b>Họ tên:</b> Hoàng Thành Đạt</p>
+                <p><b>Email:</b>
+                    <a href="mailto:hdat1707@gmail.com">
+                        hdat1707@gmail.com
+                    </a>
+                </p>
+                <p><b>Trường:</b> Đại học Vinh</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Hoàng Thành Đạt</p>
+        <p>Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
